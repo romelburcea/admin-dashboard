@@ -1,0 +1,370 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.right-side{
+    display: grid;
+    grid-column: 2 / 3;
+    background-color: #526D82;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header{
+    grid-row: 1 / 2;
+    background-color: #9DB2BF;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.upper-part{
+    display: grid;
+    background-color: #9DB2BF;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.upper-first{
+    
+    display: flex;
+    
+    padding-left: 60px;
+    gap: 40px;
+    align-items: center;
+}
+
+.upper-second{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.lower-part{
+    display: grid;
+    background-color: #9DB2BF;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lower-first{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    gap: 20px;
+}
+
+.lower-second{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.lower-second > button{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.left-side{
+    grid-column: 1 / 2;
+    background-color: #1B262C;
+    grid-row: 1 / 2;  
+    
+    display: grid;
+
+    grid-template-rows: 1fr 6fr 8fr;
+}
+
+.sidebar-first{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 30px;
+    border-style: none;
+}
+
+
+.sidebar-middle{
+    grid-row: 2 / 3; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+
+.sidebar-lower{
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+}
+
+.sidebar-middle > button {
+    height: 70px;
+    width: 200px;
+    color: white;
+    font-size: larger;
+    background: none;
+    border: none;
+}
+
+.sidebar-middle > button:hover{
+    border-bottom: 2px solid white
+}
+
+.sidebar-lower > button{ 
+    height: 70px;
+    width: 200px;
+    color: white;
+    font-size: larger;
+    background: none;
+    border: none;
+}
+
+.sidebar-lower > button:hover{
+    border-bottom: 2px solid white
+}
+
+.sidebar-lower{
+    grid-row: 3 / 4; 
+    
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 30px;
+    padding-top: 10px;
+    grid-column: 1 / 2;
+}
+
+.full-projects{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #526D82;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6  {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 500px;
+    border: 2px solid black;
+    border-left: 10px solid orange;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: #9DB2BF;
+}
+
+.announcements{
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 350px;
+    
+   
+    
+}
+
+.announcements > h3 {
+    font-size: 25px;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #9DB2BF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.trending{
+    flex-direction: column;
+    display: flex;
+    padding-left: 20px;
+}
+
+
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.one,
+.second,
+.third{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.one, .second{
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+}
+
+.trending-pic{
+    height: 50px;
+    width: 50px;
+}
+
+.one h5,
+.one p, 
+.second h5,
+.second p,
+.third h5,
+.third p {
+    margin: 0; /* Remove default margins */
+}
+
+.one h5,
+.second h5,
+.third h5 {
+    margin-bottom: 0.2em; /* Optional: Add a small margin at the bottom */
+    font-size: larger;
+}
+
+
+
+
+
+
+
+.cardstuff{
+    display: flex;
+    gap: 20px;
+    padding-left: 250px;
+    align-items: flex-end;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6 > p{
+    font-size: larger;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6 > h4{
+    font-size: 23px;
+}
+
+
+.sidebar-logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+#search{
+    width: 700px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.content{
+    grid-row: 2 / 3;
+}
+
+.lupa{
+    height: 50px;
+    width: 50px;
+}
+
+.bell{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.person1{
+    height: 80px;
+    width: 80px;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+
+.star,
+.eye,
+.share{
+    width: 50px;
+    height: 50px;
+}
+
+.projects > h3{
+    font-size: 40px;
+}
+
+
+.content-right{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #9DB2BF;
+    border-radius: 10px;
+    padding: 10px;
+    width: 330px;
+}
